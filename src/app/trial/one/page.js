@@ -327,7 +327,7 @@ export default function HomePage(request) {
               </span>
             </h2>
             <p className="text-xl text-white/60 max-w-3xl mx-auto">
-              We're not just another e-commerce platform. We're your gateway to the future of retail.
+              We&apos;re not just another e-commerce platform. We&apos;re your gateway to the future of retail.
             </p>
           </div>
 
