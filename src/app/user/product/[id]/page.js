@@ -118,7 +118,6 @@ export default function ProductDetailPage() {
 
   // Build image gallery
   const images = [
-    product.cover_image,
     ...(product.gallery_images || []).map((img) =>
       img.startsWith("http") ? img : `/gallery/${img}`
     ),
