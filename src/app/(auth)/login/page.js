@@ -39,6 +39,7 @@ const LoginForm = () => {
       if (res.code == 1) {
         toast.success(res.message);
         localStorage.setItem("signup_step",res.data.signup_step);
+        cookieStore.set("user_token",res.data.user_token);
         router.push('/user/home');
       } else {
         toast.error(res.message);

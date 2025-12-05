@@ -13,6 +13,7 @@ export default function UserPanel() {
     let res=await logOut();
     if(res.code==1){
       toast.success(res.message);
+      cookieStore.delete("user_token");
       router.push("/login");
     }else{
       toast.error(res.message);

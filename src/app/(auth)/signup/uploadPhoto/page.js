@@ -49,6 +49,7 @@ export default function UploadPhoto() {
           toast.success(res2.message);
           localStorage.removeItem('user_id');
           localStorage.removeItem('signup_step');
+          cookieStore.set("user_token",res2.data.user_token);
           router.replace("/user/home"); 
         }else{
           toast.error(res2.message);
